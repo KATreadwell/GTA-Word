@@ -1,37 +1,73 @@
 // Use the src attribute of the script tag to link to this file, rather than embedding the code directly in your HTML document.
+// Use key events to listen for the letters that your players will type.
+// Display the following on the page:
+// Press any key to get started!
+// Wins: (# of times user guessed the word correctly).
+// If the word is madonna, display it like this when the game starts: _ _ _ _ _ _ _.
+// As the user guesses the correct letters, reveal them: m a d o _  _ a.
+// Number of Guesses Remaining: (# of guesses remaining for the user).
+// Letters Already Guessed: (Letters the user has guessed, displayed like L Z Y H).
+// After the user wins/loses the game should automatically choose another word and make the user play it.
+// After completing the homework please add the piece to your portfolio.
 
-// Create an array of words
+
+<p id = "word"></p>
+
+var array1[
+  {
+
+  }
+]
+
+//guesses + categories
 var words = [
     // mission
     "waste the wife",
-    // best weapon
-    "katana",
-    // main character name
+    // mission
+    "ambulance", 
+    //mission
+    "rampage",
+    // character
     "tommy vercetti",
-    // softcore character
+    // character
     "candy suxxx",
-    //song 
+    // character
+    "love fist"
+    //song
     "i ran so far away",
     //song
     "sunglasses at night",
-    // mission
-    "ambulance",
-    //fun times
-    "rampage",
-    // vehicle
+    //vehicle
     "infernus",
-    // best vehicle
+    //vehicle
     "helicopter",
-    // weapon
+    //weapon
     "flamethrower",
     //weapon
     "rocket launcher",
-    // supporting character
-    "love fist"
+    //weapon
+    "katana",
     ];
+
+
+//number of times user guessed word correctly (reveal letters as player guesses)
+var tracker = 0;
+var wins = 0;
+var currentWord = array1[tracker]
+function displayquestion(){
+  document.getElementById("word").textContent=currentWord
+}
+//pick random word
+var word = words[Math.floor(Math.random() * words.length)];
+
+displayquestion()
+document.addEventListener("keypress", fuction(event){
+  console.log(event)
+  var keypress = event.key
+})
+
+//before call display question, increment tracker
     
-    // Pick a random word
-    var word = words[Math.floor(Math.random() * words.length)];
     
     // Set up the amswer answerArrayvar answerArray = [];
     for (var i = 0; i < word.length; i++) {
@@ -47,10 +83,8 @@ var words = [
     
     // Get a guess from the player
     
-    var guess = prompt("Guess a letter, or click Cancel to stop playing.");
-    if (guess === null) {
-    // Exit the game loop
-    break;
+    var guess = prompt("Guess a letter.");
+    if (guess === ) {
     } else if (guess.length !== 1) {
     alert("Please enter a single letter.");
     } else {
@@ -62,10 +96,8 @@ var words = [
       }
     }
     }
-    
     // The end of the game loop
     }
-    
     // Show the answer and congratulate the player
     
     alert(answerArray.join(" "));

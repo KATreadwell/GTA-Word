@@ -25,11 +25,21 @@ body{
     }
   }
 
+#start{
+  color: purple;
+  font-family: 'neon_80sregular';
+  background-color: teal;
+  font-weight: bold;
+  border-color: purple;
+  font-size: 40px;
+  padding: 10px;
+}
+
 .main-content{
   text-align: center;
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
 }
 
 .game-placeholder{
@@ -37,7 +47,6 @@ body{
     border-style: solid;
     border-width: 3px;
     border-color: purple;
-    margin: 10px;
     padding: 20px;
     width: 960px;
     height: 500px;
@@ -45,16 +54,22 @@ body{
     top: 55%;
     left: 72%; 
     transform: translate(-50%, -50%);
-}
-
-#game{
-  font-family: 'neon_80sregular';
+    text-align: center;
 }
 
 @font-face {
   font-family: 'neon_80sregular';
-  src: url("/assets/images/webfontkit-20200225-020337/neon-webfont.woff")
-       url('/assets/images/webfontkit-20200225-020337/neon-webfont.woff2') format('woff');
   font-weight: normal;
   font-style: normal;
+  src: url('../images/webfontkit-20200225-020337/neon-webfont.woff'),
+       url('../images/webfontkit-20200225-020337/neon-webfont.woff2') format('woff');
 }
+
+#game{
+  color: purple;
+  font-family: 'neon_80sregular';
+  font-size: 40px;
+  display: inline-block;
+  margin: 100px auto;
+}
+

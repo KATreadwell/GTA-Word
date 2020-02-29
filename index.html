@@ -15,18 +15,36 @@
 
     <div class="main.content">
         <div class="game-placeholder">
-        <p id="game">Test your Grand Theft Auto: Vice City knowledge with this word game, GTA-style.</p>
-        <input type="button" id="start" value="Let's Rock!" onClick="window.clear()"/>
-        
+            <p id="game">Test your Grand Theft Auto: Vice City knowledge with this word game, GTA-style.</p>
+            <input type="button" id="start" value="Let's Rock!" onClick="start()"/>
+            <div container>
+                <div row>
+                    <div class="jeopardy">
+                        <!-- <div row>
+                            <div class="answer">
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+        <div class = score>
+            <div class="row">
+                <div class="col">
+                    <div id="score">Score</div>
+                        <div id="wins">Wins</div>
+                        <div id="losses">Losses</div>
+                        <div id="remainingGuesses">Guesses Left</div>
+                        <div id="mistakesMade">You are dumb</div>
+                </div>
+            </div>
+        </div>
 
-
-    
-    
+  
     
 </body>
-<script type="text/javascript" src="./assets/javascript/game.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="./assets/javascript/game.js"></script>
+
 
 </html>

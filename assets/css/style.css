@@ -130,4 +130,15 @@ body{
   justify-content: space-evenly;
 }
 
+#current-word{
+  font-family: 'neon_80sregular';
+  color: purple;
+  font-size: 40px;
+}
+
+#lettersGuessed{
+  font-family: 'neon_80sregular';
+  color:teal;
+  font-size: 30px;
+}
 
